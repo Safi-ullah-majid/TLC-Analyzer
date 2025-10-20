@@ -1,4 +1,23 @@
-# TLC Plate Analyzer 🧪
+<div align="center">
+
+# 🧪 TLC Plate Analyzer
+
+![TLC Analyzer](https://via.placeholder.com/800x400/4A90E2/ffffff?text=TLC+Plate+Analyzer)
+
+### Automated TLC Analysis with Deep Learning
+
+[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
+[![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-red.svg)](https://pytorch.org/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![YOLOv8](https://img.shields.io/badge/YOLOv8-Ultralytics-yellow.svg)](https://github.com/ultralytics/ultralytics)
+
+**Detect spots • Calculate Rf values • Recommend solvents • Estimate time**
+
+[Features](#-features) • [Installation](#-installation) • [Usage](#-usage) • [Models](#-models)
+
+</div>
+
+---
 
 Automated TLC (Thin Layer Chromatography) analysis using deep learning.
 
