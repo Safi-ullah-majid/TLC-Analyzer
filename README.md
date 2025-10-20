@@ -105,7 +105,7 @@ MIT License
 
 ## 👨‍💻 Author
 
-Your Name - [Your GitHub Profile](https://github.com/YOUR_USERNAME)
+Your Name - [Your GitHub Profile](https://github.com/Safi-Ullah-majid)
 
 ## 🙏 Acknowledgments
 
