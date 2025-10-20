@@ -2,7 +2,7 @@
 
 # 🧪 TLC Plate Analyzer
 
-![TLC Analyzer](https://via.placeholder.com/800x400/4A90E2/ffffff?text=TLC+Plate+Analyzer)
+<img src="https://www.cem.msu.edu/~reusch/OrgPage/Images/tlc.gif" alt="TLC Plate" width="600"/>
 
 ### Automated TLC Analysis with Deep Learning
 
