@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Large files (use Git LFS)
+# *.pt
+# *.pth
+
+# Data
+*.jpg
+*.png
+*.jpeg
+data/raw/
+data/processed/

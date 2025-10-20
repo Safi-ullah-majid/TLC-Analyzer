@@ -1,0 +1,30 @@
+{
+  "project_name": "TLC Analyzer",
+  "version": "1.0.0",
+  "models": {
+    "yolo_spot_detector": {
+      "architecture": "YOLOv8n",
+      "training_images": 500,
+      "epochs": 50,
+      "performance": {
+        "mAP50": "0.95+",
+        "accuracy": "100%"
+      }
+    },
+    "recommendation_model": {
+      "architecture": "Multi-task Neural Network",
+      "tasks": [
+        "solvent_classification",
+        "column_prediction",
+        "time_estimation"
+      ],
+      "performance": {
+        "solvent_accuracy": "95%",
+        "columns_mae": 0.507,
+        "time_mae_minutes": 54.4
+      }
+    }
+  },
+  "training_date": "2024",
+  "framework": "PyTorch + Ultralytics"
+}
