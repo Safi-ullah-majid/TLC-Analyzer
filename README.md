@@ -1,51 +1,78 @@
 <div align="center">
 
-# 🧪 TLC Plate Analyzer
-
 <img src="https://www.cem.msu.edu/~reusch/OrgPage/Images/tlc.gif" alt="TLC Plate" width="600"/>
+
+# 🧪 TLC Plate Analyzer
 
 ### Automated TLC Analysis with Deep Learning
 
-[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
-[![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-red.svg)](https://pytorch.org/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![YOLOv8](https://img.shields.io/badge/YOLOv8-Ultralytics-yellow.svg)](https://github.com/ultralytics/ultralytics)
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.8%2B-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/PyTorch-2.0%2B-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch">
+  <img src="https://img.shields.io/badge/License-MIT-00C853?style=for-the-badge&logo=opensourceinitiative&logoColor=white" alt="License">
+  <img src="https://img.shields.io/badge/YOLOv8-Ultralytics-FFD43B?style=for-the-badge" alt="YOLOv8">
+</p>
 
 **Detect spots • Calculate Rf values • Recommend solvents • Estimate time**
 
-[Features](#-features) • [Installation](#-installation) • [Usage](#-usage) • [Models](#-models)
+<p align="center">
+  <a href="#-features"><strong>Features</strong></a> ·
+  <a href="#-model-performance"><strong>Performance</strong></a> ·
+  <a href="#-installation"><strong>Installation</strong></a> ·
+  <a href="#-usage"><strong>Usage</strong></a> ·
+  <a href="#-models"><strong>Models</strong></a> ·
+  <a href="#-results"><strong>Results</strong></a>
+</p>
 
 </div>
 
 ---
 
-Automated TLC (Thin Layer Chromatography) analysis using deep learning.
+Automated **TLC (Thin Layer Chromatography)** analysis using deep learning — upload a plate image and get spot detection, Rf values, solvent recommendations, and runtime estimates in one pass.
+
+---
 
 ## 🎯 Features
 
-- **Automatic Spot Detection** - YOLOv8-based spot detection
-- **Rf Value Calculation** - Precise retention factor computation
-- **Solvent System Recommendation** - AI-powered solvent selection
-- **Column Prediction** - Estimates number of columns needed
-- **Time Estimation** - Predicts chromatography runtime
+| | |
+|---|---|
+| 🔍 **Automatic Spot Detection** | YOLOv8-based spot detection on TLC plate images |
+| 📐 **Rf Value Calculation** | Precise retention factor computation for every detected spot |
+| 🧪 **Solvent System Recommendation** | AI-powered solvent selection based on plate characteristics |
+| 📊 **Column Prediction** | Estimates the number of columns needed for separation |
+| ⏱️ **Time Estimation** | Predicts chromatography runtime |
+
+---
 
 ## 📊 Model Performance
 
-- **Spot Detection Accuracy**: 100%
-- **Solvent Classification**: 95%
-- **Inference Speed**: ~7ms per image
+<div align="center">
+
+| Metric | Value |
+|---|---|
+| 🎯 Spot Detection Accuracy | **100%** |
+| 🧪 Solvent Classification | **95%** |
+| ⚡ Inference Speed | **~7ms** per image |
+
+</div>
+
+---
 
 ## 🚀 Installation
+
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/TLC-Analyzer.git
+git clone https://github.com/Safi-ullah-majid/TLC-Analyzer.git
 cd TLC-Analyzer
 
 # Install dependencies
 pip install -r requirements.txt
 ```
 
+---
+
 ## 💻 Usage
+
 ```python
 from src.inference import TLCAnalyzer
 
@@ -63,7 +90,10 @@ print(result)
 analyzer.analyze_and_visualize('your_tlc_image.jpg', 'output.jpg')
 ```
 
+---
+
 ## 📦 Project Structure
+
 ```
 TLC_Analyzer_Project/
 ├── models/                      # Trained models
@@ -78,19 +108,34 @@ TLC_Analyzer_Project/
 └── README.md
 ```
 
+---
+
 ## 🧠 Models
 
-### 1. YOLO Spot Detector
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### 1️⃣ YOLO Spot Detector
 - **Architecture**: YOLOv8n
 - **Training Data**: 500 synthetic TLC images
 - **Performance**: mAP50 = 0.95+
 
-### 2. Recommendation Model
+</td>
+<td width="50%" valign="top">
+
+### 2️⃣ Recommendation Model
 - **Architecture**: Multi-task Neural Network
-- **Tasks**: 
+- **Tasks**:
   - Solvent classification (3 classes)
   - Column count prediction (regression)
   - Time estimation (regression)
+
+</td>
+</tr>
+</table>
+
+---
 
 ## 📈 Results
 
@@ -101,12 +146,23 @@ TLC_Analyzer_Project/
 | Columns MAE | 0.507 |
 | Time MAE | 54.4 min |
 
+---
+
 ## 🔧 Technical Details
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Framework-PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" alt="PyTorch">
+  <img src="https://img.shields.io/badge/Object%20Detection-YOLOv8-FFD43B?style=flat-square" alt="YOLOv8">
+  <img src="https://img.shields.io/badge/Image%20Processing-OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white" alt="OpenCV">
+  <img src="https://img.shields.io/badge/Training-Google%20Colab-F9AB00?style=flat-square&logo=googlecolab&logoColor=white" alt="Colab">
+</p>
 
 - **Framework**: PyTorch
 - **Object Detection**: Ultralytics YOLOv8
 - **Image Processing**: OpenCV
 - **Training**: Google Colab (GPU)
+
+---
 
 ## 📝 Requirements
 
@@ -114,24 +170,46 @@ TLC_Analyzer_Project/
 - PyTorch 2.0+
 - CUDA (optional, for GPU acceleration)
 
+---
+
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## 📄 License
-
-MIT License
-
-## 👨‍💻 Author
-
-Safi Ullah Majid- [Your GitHub Profile](https://github.com/Safi-Ullah-majid)
-
-## 🙏 Acknowledgments
-
-- Ultralytics YOLOv8
-- PyTorch Team
-- OpenCV Community
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
 ---
 
-**Note**: This project uses synthetic training data. For production use, fine-tune with real TLC images.
+## 📄 License
+
+This project is licensed under the **MIT License**.
+
+---
+
+## 👨‍💻 Author
+
+**Safi Ullah Majid**
+
+- GitHub: [@Safi-ullah-majid](https://github.com/Safi-ullah-majid)
+
+---
+
+## 🙏 Acknowledgments
+
+- [Ultralytics YOLOv8](https://github.com/ultralytics/ultralytics)
+- [PyTorch Team](https://pytorch.org/)
+- [OpenCV Community](https://opencv.org/)
+
+---
+
+<div align="center">
+
+> ⚠️ **Note**: This project uses synthetic training data. For production use, fine-tune with real TLC images.
+
+**⭐ Star this repository if you find it helpful!**
+
+</div>
