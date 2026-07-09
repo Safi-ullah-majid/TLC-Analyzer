@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://www.cem.msu.edu/~reusch/OrgPage/Images/tlc.gif" alt="TLC Plate" width="600"/>
+<img src="docs/TLC-banner.png" alt="TLC Plate Analyzer Overview" width="100%"/>
 
 # 🧪 TLC Plate Analyzer
 
