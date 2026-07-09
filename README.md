@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="docs/TLC.png" alt="TLC Plate Analyzer Overview" width="100%"/>
+<img src="TLC.png" alt="TLC Plate Analyzer Overview" width="100%"/>
 
 # 🧪 TLC Plate Analyzer
 
